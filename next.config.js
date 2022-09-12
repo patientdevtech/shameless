@@ -7,7 +7,7 @@ module.exports ={
       "platform-lookaside.fbsbx.com",
       "firebasestorage.googleapis.com",
     ],
-    fallback: true,
+    // fallback: true,
   }, 
 }
 // module.exports = next.Config

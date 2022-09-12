@@ -68,6 +68,8 @@ function Inputbox() {
             <Image
                 className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-"
                 // src={session.user.image}
+                src=""
+                alt=""
                 width={40}
                 height={40}
                 layout="fixed"

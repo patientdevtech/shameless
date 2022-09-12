@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "nepxt build",
     "start": "next start",
     "lint": "next lint"
   },
+  "license": "UNLICENSED",
   "dependencies": {
     "@heroicons/react": "v1",
     "firebase": "^9.9.4",

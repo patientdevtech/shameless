@@ -2,6 +2,7 @@ import { SearchIcon } from "@heroicons/react/outline"
 import { DotsHorizontalIcon, VideoCameraIcon } from "@heroicons/react/solid"
 import Contact from './Contact'
 
+
 const contacts =[
   { src: "https://links.papareact.com/f0p", name: "Brutus Maximus" },
   { src: "", name: "Paris Erickson" },

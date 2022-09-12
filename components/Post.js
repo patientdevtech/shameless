@@ -1,4 +1,4 @@
-import Image from "next/Image"
+import Image from "next/image"
 import { ChatAltIcon, ShareIcon, ThumbUpIcon } from "@heroicons/react/outline";
 
 function Post({ name, message, email, postImage, image, timestamp }) {
@@ -28,6 +28,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
             <div className="relative h-56 md:h-96 bg-white">
                 <Image 
                     src={postImage} 
+                    alt=""
                     objectFit="cover" 
                     layout="fill"
                 />

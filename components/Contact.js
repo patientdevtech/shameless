@@ -7,6 +7,7 @@ function Contact({ src, name }) {
             className="rounded-full"
             objectFit="cover"
             src={src}
+            alt=""
             width={50}
             height={50}
             layout="fixed"
