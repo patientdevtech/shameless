@@ -24,7 +24,7 @@ function Header() {
         {/* left */}
         <div className="flex items-center">
             <Image 
-                src="https://imgur.com/f3Fpwhz.png" 
+                src="https://imgur.com/LJOCFln.png" 
                 alt="logo"
                 width={40}
                 height={40} 

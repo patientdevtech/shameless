@@ -1,50 +1,50 @@
 import StoryCard from "./StoryCard"
 const stories = [
-    {
-        name: "Patient Devtech",
-        src: "👸",
-        profile: "",
-    },
-    {
-        name: "Planner Friend",
-        src: "🤓",
-        profile: "",
-    },    
-    {
-        name: "Famous Friend",
-        src: "🤩",
-        profile: "",
-    },
-    {
-        name: "Empath Friend",
-        src: "🥲",
-        profile: "",
-    },
-    {
-        name: "Workaholic Friend",
-        src: "🤖",
-        profile: "",
-    },
-    {
-        name: "Party Friend",
-        src: "🥳",
-        profile: "",
-    },
-    {
-        name: "Goody-Goody Friend",
-        src: "🧐",
-        profile: "",
-    },
-    {
-        name: "OverShare Friend",
-        src: "😩",
-        profile: "",
-    },
-    {
-        name: "Thaaaat Friend",
-        src: "🥴",
-        profile: "",
-    },
+    // {
+    //     name: "Patient Devtech",
+    //     src: "👸",
+    //     profile: "",
+    // },
+    // {
+    //     name: "Planner Friend",  
+    //     src: "🤓",
+    //     profile: "",
+    // },    
+    // {
+    //     name: "Famous Friend",
+    //     src: "🤩",
+    //     profile: "",
+    // },
+    // {
+    //     name: "Empath Friend",
+    //     src: "🥲",
+    //     profile: "",
+    // },
+    // {
+    //     name: "Workaholic Friend",
+    //     src: "🤖",
+    //     profile: "",
+    // },
+    // {
+    //     name: "Party Friend",
+    //     src: "🥳",
+    //     profile: "",
+    // },
+    // {
+    //     name: "Goody-Goody Friend",
+    //     src: "",
+    //     profile: "/🧐",
+    // },
+    // {
+    //     name: "OverShare Friend",
+    //     src: "😩",
+    //     profile: "",
+    // },
+    // {
+    //     name: "Thaaaat Friend",
+    //     src: "🥴",
+    //     profile: "",
+    // },
     {
         name: "Billy G",
         src: "https://links.papareact.com/4u4",

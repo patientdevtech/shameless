@@ -11,33 +11,41 @@ function Inputbox() {
     const filepickerRef = useRef(null)
     const [imageToPost, setImageToPost] = useState(null);
 //prevent page from auto refreshing and reloading
-  const sendPost = e => {
+  const sendPost = (e) => {
     e.preventDefault();
 
 
 
     if(!inputRef.current.value) return;
 
-    db.collection('posts').add({
-        message: inputRef.current.value,
-        name: session.user.name,
-        email: session.user.email,
-        image: session.user.image,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp()
-    }).then(doc => {
-        if (imageToPost) {
-            const uploadTask = storage.ref(`posts/${doc.id}`).putString(imageToPost,'data_url')
+    db.collection('posts')
+        .add({
+            message: inputRef.current.value,
+            name: session.user.name,
+            email: session.user.email,
+            image: session.user.image,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        })
+        .then((doc) => {
+            if (imageToPost) {
+                const uploadTask = storage
+                    .ref(`posts/${doc.id}`)
+                    .putString(imageToPost,'data_url')
             
-            removeImage();
+                removeImage();
 
-            uploadTask.on('state_change', null, error =>console.error(error),
-            () => {
-            //When upload completes successfully ppr 2h57
-            }) 
-        }
-    })
-    inputRef.current.value = "";
-  }
+                uploadTask.on(
+                    'state_change', 
+                    null, 
+                    (error) => console.error(error),
+                    () => {
+                        //When upload completes successfully ppr 2h57
+                        
+                    }) 
+            }   
+        })
+        inputRef.current.value = "";
+    }
 
   const addImageToPost = (e) => {
     const reader = new FileReader();
