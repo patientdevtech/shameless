@@ -41,13 +41,13 @@ export default function Home({ session }) {
 // }
 
 //uncomment out vvvvvvvvvvv before 1:18 https://www.youtube.com/watch?v=dBotWYKYYWc
-// export async function getServerSideProps (context) {
-//  const session = await unstable_getServerSession(context);
+export async function getServerSideProps (context) {
+ const session = await unstable_getServerSession(context);
  
-//  return{
-//   props: {
-//     session
-//   }
-//  }
-// }
+ return{
+  props: {
+    session
+  }
+ }
+}
 //uncomment out ^^^^^^^^^^^^^^^^
