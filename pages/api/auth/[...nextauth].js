@@ -21,5 +21,5 @@ export default NextAuth({
     ],
 
     //a database is optional, but required to persist accounts in a database
-    //database: process.env.REACT_APP_DATABASE_URL;
+    // database: process.env.REACT_APP_DATABASE_URL;
 });
