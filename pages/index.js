@@ -1,4 +1,4 @@
-// import { unstable_getServerSession } from "next-auth/next" 
+import { unstable_getServerSession } from "next-auth/next" 
 // import NextAuth from 'pages/api/auth/[...nextauth]'
 import { getSession } from 'next-auth/react';
 import Head from 'next/head'
@@ -30,6 +30,18 @@ export default function Home({ session }) {
     </div>
   );
 }
+
+export async function getServerSideProps (context) {
+  const session = await unstable_getServerSession(context);
+  const session = await unstable_getServerSession(context.req, context.res);
+ 
+  return{
+   props: {
+     session
+   }
+  }
+ }
+
 
 //1 uncomment out vvvvvvvvvvv before 1:18 https://www.youtube.com/watch?v=dBotWYKYYWc
 // export async function getServerSideProps(context) {
