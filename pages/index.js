@@ -26,27 +26,3 @@ export default function Home({ session }) {
     </div>
   );
 }
-
-// export async function getServerSideProps(context) {
-//   //get the user from nextauth library. context is user request.
-//   //session info is passed as a prop in user's browser  
-//   const session = await getSession(context);
-
-//   return{
-//     props: {
-//       session
-//     }
-//   }
-// }
-
-//uncomment out vvvvvvvvvvv before 1:18 https://www.youtube.com/watch?v=dBotWYKYYWc
-// export async function getServerSideProps (context) {
-//  const session = await unstable_getServerSession(context);
- 
-//  return{
-//   props: {
-//     session
-//   }
-//  }
-// }
-//uncomment out ^^^^^^^^^^^^^^^^
