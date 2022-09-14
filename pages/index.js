@@ -13,7 +13,7 @@ export default function Home({ session }) {
   return (
     <div className="h-screen bg-tan-100 overflow-hidden">
       <Head>
-        <title>Shameless Share</title>
+        <title>Connected Forever-ever</title>
       </Head>
   
       <Header />
