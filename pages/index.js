@@ -5,7 +5,7 @@ import Login from "../components/Login";
 import Sidebar from "../components/Sidebar"
 import Feed from "../components/Feed"
 import Connections from "../components/Connections"
-import { db } from "../firebase"
+// import { db } from './firebase'
 
 
 export default function Home({ session, posts }) {
