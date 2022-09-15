@@ -4,7 +4,7 @@ import Header from "../components/Header"
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar"
 import Feed from "../components/Feed"
-import Connections from "../components/Co\nections"
+import Connections from "../components/Connections"
 // import { db } from './firebase'
 
 
