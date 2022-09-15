@@ -1,18 +1,22 @@
-import firebase from 'firebase';
-import "firebase/storage";
+import firebase from "firebase/app";
+import "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDk21vLo1VE6HDkzzF-HEv1QmYLtzdBS6M",
-    authDomain: "facebook-2-yt.firebaseapp.com",
-    projectId: "facebook-2-yt",
-    storageBucket: "facebook-2-yt.appspot.com",
-    messagingSenderId: "946331950880",
-    appId: "1:946331950880:web:614742b1e87167d47f0145",
-}
+    apiKey: "AIzaSyCMlAdgF1oJT5AiAgHTiBG67Fn2wsL40ko",
+    authDomain: "shameless-ab794.firebaseapp.com",
+    projectId: "shameless-ab794",
+    storageBucket: "shameless-ab794.appspot.com",
+    messagingSenderId: "50277848436",
+    appId: "1:50277848436:web:2dd60c266073de803d4821",
+    measurementId: "G-QJXKGLSJD1"
+  };
+  
+// const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
+// const app = initializeApp(firebaseConfig)
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
-const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
 
-const db = app.firestore();
-const storage = firebase.storage();
+// const storage = firebase.storage();
 
-export { db, storage };
+export { db };

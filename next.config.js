@@ -6,6 +6,7 @@ module.exports ={
       "links.papareact.com",
       "platform-lookaside.fbsbx.com",
       "firebasestorage.googleapis.com",
+      "https://connectedandstuff.netlify.app",
     ],
     // fallback: true,
   }, 
