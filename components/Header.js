@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { signOut, UseSession} from "next-auth/client"
 
 import {
     BellIcon,

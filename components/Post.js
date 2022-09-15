@@ -12,6 +12,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
                     width={40}
                     height={40}
                     alt=""
+                    layout="fixed"
                 />
                 <div>
                     <p>{name}</p>

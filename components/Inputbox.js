@@ -15,7 +15,6 @@ function Inputbox() {
     e.preventDefault();
 
 
-
     if(!inputRef.current.value) return;
 
     db.collection('posts')
