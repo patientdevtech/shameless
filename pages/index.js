@@ -10,7 +10,7 @@ import Connections from "../components/Connections"
 
 export default function Home({ session, posts }) {
   //if there is no session, return a login component 
-  if (!session) return <Login />;
+  // if (!session) return <Login />;
   return (
     <div className="h-screen bg-tan-100 overflow-hidden">
       <Head>
@@ -30,22 +30,22 @@ export default function Home({ session, posts }) {
 
 
 
-export async function getServerSideProps(context) {
-  // Get User
-  const session = await getSession(context);
+// export async function getServerSideProps(context) {
+//   // Get User
+//   const session = await getSession(context);
 
-  const posts = await db.collection("posts").orderBy("timestamp", "desc").get();
+//   const posts = await db.collection("posts").orderBy("timestamp", "desc").get();
 
-  const docs = posts.docs.map((post) => ({
-    id: post.id,
-    ...post.data(),
-    timestamp: null,
-  }));
+//   const docs = posts.docs.map((post) => ({
+//     id: post.id,
+//     ...post.data(),
+//     timestamp: null,
+//   }));
 
-  return {
-    props: { session, posts: docs },
-  };
-}
+//   return {
+//     props: { session, posts: docs },
+//   };
+// }
 
 
 

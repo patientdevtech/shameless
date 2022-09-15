@@ -6,9 +6,9 @@ import { Provider } from "next-auth/react"
 //keep user logged in between pages
 function MyApp({ Component, pageProps }) {
   return (
-  <Provider session={ pageProps.session }>
+  // <Provider session={ pageProps.session }>
   <Component {...pageProps} />
-  </Provider>
+  // </Provider>
   )
 }
 
