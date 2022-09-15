@@ -1,10 +1,10 @@
-import { getSession } from "next-auth/client" 
+import { getSession } from "next-auth/react" 
 import Head from 'next/head'
 import Header from "../components/Header"
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar"
 import Feed from "../components/Feed"
-import Connections from "../components/Connections"
+import Connections from "../components/Co\nections"
 // import { db } from './firebase'
 
 

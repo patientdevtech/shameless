@@ -1,4 +1,4 @@
-// import { useSession } from "next-auth/client";
+// import { useSession } from "next-auth/react";
 import Image from "next/image";
 import { CameraIcon, EmojiHappyIcon, VideoCameraIcon } from "@heroicons/react/solid";
 import { useRef, useState } from "react";
