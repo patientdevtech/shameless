@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { SessionProvider } from "next-auth/react"
+import { Provider } from "next-auth/client";
 // import {useSession} from "next-auth/react"
 
 //keep user logged in between pages
@@ -11,15 +11,17 @@ import { SessionProvider } from "next-auth/react"
 //   )
 // }
 
-export default function App({
-  Component,
-  pageProps: { session, ...pageProps },
-}) {
+function MyApp({ Component, pageProps }) {
   return (
-    <SessionProvider session={JSON.stringify(session)}>
+    <Provider session={pageProps.session}>
       <Component {...pageProps} />
-    </SessionProvider>
-  )
+    </Provider>
+  );
 }
+export default MyApp;
 
 //resource: https://next-auth.js.org/tutorials/securing-pages-and-api-routes 
+
+//check all nextauth imports/code
+//settings in firestore site 
+//config files - index.js next-auth.js 

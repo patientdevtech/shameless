@@ -1,11 +1,11 @@
-import { getSession } from "next-auth/react" 
+import { getSession } from "next-auth/client" 
 import Head from 'next/head'
 import Header from "../components/Header"
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar"
 import Feed from "../components/Feed"
 import Connections from "../components/Connections"
-import { db } from '../firebase'
+// import { db } from '../firebase'
 
 
 export default function Home({ session, posts }) {
@@ -43,7 +43,7 @@ export async function getServerSideProps(context) {
   }));
 
   return {
-    props: { session, posts, docs },
+    props: { session, posts: docs },
   };
 }
 
