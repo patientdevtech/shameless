@@ -6,10 +6,10 @@ function Login() {
   return (
     <div className="grid place-items-center">
           <Image 
-                src="https://links.papareact.com/t4i" 
+                src="https://imgur.com/gHPxE9V.png" 
                 alt="fb.login.img"
-                width={400}
-                height={400} 
+                width={300}
+                height={300} 
                 objectFit="contain"
             />
             <h1 
@@ -23,3 +23,5 @@ function Login() {
 }
 
 export default Login
+
+ 
