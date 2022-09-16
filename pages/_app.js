@@ -16,7 +16,7 @@ export default function App({
   pageProps: { session, ...pageProps },
 }) {
   return (
-    <SessionProvider session={session}>
+    <SessionProvider session={JSON.stringify(session)}>
       <Component {...pageProps} />
     </SessionProvider>
   )

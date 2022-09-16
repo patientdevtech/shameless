@@ -11,7 +11,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@heroicons/react": "v1",
-    "eslint-plugin-json": "^3.1.0",
     "firebase": "8.10.1",
     "next": "12.2.5",
     "next-auth": "^4.10.3",
