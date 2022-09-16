@@ -2,15 +2,6 @@ import "../styles/globals.css";
 import { Provider } from "next-auth/client";
 // import {useSession} from "next-auth/react"
 
-//keep user logged in between pages
-// function MyApp({ Component, pageProps }) {
-//   return (
-//   <SessionProvider session={ pageProps.session }>
-//   <Component {...pageProps} />
-//   </SessionProvider>
-//   )
-// }
-
 function MyApp({ Component, pageProps }) {
   return (
     <Provider session={pageProps.session}>
@@ -25,3 +16,13 @@ export default MyApp;
 //check all nextauth imports/code
 //settings in firestore site 
 //config files - index.js next-auth.js 
+
+//notes:
+//keep user logged in between pages
+// function MyApp({ Component, pageProps }) {
+//   return (
+//   <SessionProvider session={ pageProps.session }>
+//   <Component {...pageProps} />
+//   </SessionProvider>
+//   )
+// }
